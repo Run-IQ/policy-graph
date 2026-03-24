@@ -1,0 +1,44 @@
+{
+  "name": "@run-iq/policy-graph",
+  "version": "0.1.0",
+  "description": "Storage, navigation, analysis, versioning, Q&A and export for PolicyGraph",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": { "types": "./dist/index.d.ts", "default": "./dist/index.js" },
+      "require": { "types": "./dist/index.d.cts", "default": "./dist/index.cjs" }
+    }
+  },
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsup",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint src/ tests/ && prettier --check src/ tests/",
+    "lint:fix": "eslint src/ tests/ --fix && prettier --write src/ tests/"
+  },
+  "peerDependencies": {
+    "@run-iq/policy-dsl": "^0.1.0"
+  },
+  "devDependencies": {
+    "@run-iq/policy-dsl": "file:../policy-dsl",
+    "@types/node": "^20.11.0",
+    "@typescript-eslint/eslint-plugin": "^7.0.0",
+    "@typescript-eslint/parser": "^7.0.0",
+    "@vitest/coverage-v8": "^4.1.0",
+    "eslint": "^8.57.0",
+    "prettier": "^3.2.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.4.0",
+    "vitest": "^4.1.0"
+  },
+  "repository": { "type": "git", "url": "https://github.com/Run-IQ/policy-graph.git" },
+  "homepage": "https://github.com/Run-IQ/policy-graph#readme",
+  "bugs": { "url": "https://github.com/Run-IQ/policy-graph/issues" },
+  "author": "Abdou-Raouf ATARMLA <achilleatarmla@gmail.com>",
+  "license": "MIT",
+  "engines": { "node": ">=20.0.0" }
+}
