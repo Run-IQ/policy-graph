@@ -86,4 +86,4 @@ Without a language model, `PolicyGraphQA` returns the chunks whose text matches 
 
 ## License
 
-MIT
+MIT License. See [LICENSE](LICENSE).
