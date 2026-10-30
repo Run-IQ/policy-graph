@@ -40,5 +40,6 @@
   "bugs": { "url": "https://github.com/Run-IQ/policy-graph/issues" },
   "author": "Abdou-Raouf ATARMLA <achilleatarmla@gmail.com>",
   "license": "MIT",
+  "publishConfig": { "registry": "https://npm.pkg.github.com" },
   "engines": { "node": ">=20.0.0" }
 }
