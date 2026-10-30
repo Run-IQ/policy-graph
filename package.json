@@ -24,7 +24,7 @@
     "@run-iq/policy-dsl": "^0.1.0"
   },
   "devDependencies": {
-    "@run-iq/policy-dsl": "file:../policy-dsl",
+    "@run-iq/policy-dsl": "^0.1.0",
     "@types/node": "^20.11.0",
     "@typescript-eslint/eslint-plugin": "^7.0.0",
     "@typescript-eslint/parser": "^7.0.0",
